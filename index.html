@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering TOS | Kyan's Workshop</title>
+    <style>
+        :root {
+            --primary: #3e699b;
+            --bg: #040404;
+            --text-main: #ffffff;
+            --text-muted: #999999;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            background-image: radial-gradient(circle at 50% 25%, rgba(62, 105, 155, 0.15) 0%, rgba(4, 4, 4, 1) 65%);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 25px auto;
+            width: 75px;
+            height: auto;
+            filter: drop-shadow(0 0 15px rgba(62, 105, 155, 0.2));
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.04em;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 50px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        .status::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .section {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--text-main);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        li strong {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin: 0 0 20px 0;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 50px;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            border-radius: 99px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-white {
+            background-color: var(--text-main);
+            color: #000000;
+        }
+
+        .btn-white:hover {
+            background-color: #e5e5e5;
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid #262626;
+        }
+
+        .btn-outline:hover {
+            background-color: #111111;
+            border-color: #404040;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            margin-top: 80px;
+            font-size: 0.8rem;
+            color: #444444;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <img src="https://i.imgur.com/plyPpdl.png" alt="Kyan's Workshop Logo" class="logo">
+    <h1>Ordering TOS</h1>
+    <div class="status">Open for commissions</div>
+
+    <div class="section">
+        <h2>Terms of Service</h2>
+        <ul>
+            <li><strong>Payment:</strong> All payments must be made in full upfront. Work commences only after payment is received.</li>
+            <li><strong>Revisions:</strong> You are entitled to 3 small revisions. Significant changes after approval will incur extra costs.</li>
+            <li><strong>Deadlines:</strong> Delivery times are estimates and will be confirmed at the start of your project.</li>
+            <li><strong>Cancellation:</strong> Deposits are non-refundable once work has commenced.</li>
+            <li><strong>Inactivity:</strong> If there is no response or activity in your ticket for 48 hours, the ticket will be closed automatically.</li>
+            <li><strong>Rights:</strong> Reselling or distributing the final product without explicit permission is strictly prohibited.</li>
+            <li><strong>Conduct:</strong> Respectful behavior is mandatory. Harassment or inappropriate conduct will result in a ban and immediate ticket closure without refund.</li>
+            <li><strong>File Storage:</strong> We are not obligated to store your files longer than 14 days after final delivery.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>How to Order</h2>
+        <p>To start a project, please open an order ticket in our Discord server and fill in all the required details clearly.</p>
+    </div>
+
+    <div class="btn-container">
+        <a href="https://discord.com/channels/1510326590473633882/1510578966795390997" class="btn btn-white">Order Now</a>
+        <a href="https://discord.com/channels/1510326590473633882/1510328563495342211" class="btn btn-outline">Contact</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Kyan's Workshop. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
