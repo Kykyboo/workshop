@@ -2,13 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/ordering-tos">
-    <title>Redirecting...</title>
-    <script>
-        window.location.replace("/ordering-tos");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Portal | Kyan's Workshop</title>
+    <style>
+        :root {
+            --primary: #3e699b;
+            --bg: #040404;
+            --text-main: #ffffff;
+            --text-muted: #999999;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            background-image: radial-gradient(circle at 50% 25%, rgba(62, 105, 155, 0.15) 0%, rgba(4, 4, 4, 1) 65%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 20px;
+            border-radius: 16px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid #262626;
+            color: var(--text-main);
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: #111111;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .btn span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="/ordering-tos">click here</a>.</p>
+
+<div class="wrapper">
+    <h1>Where to now?</h1>
+    <div class="options">
+        <a href="/ordering-tos" class="btn">
+            Ordering TOS
+            <span>Standard commission rules</span>
+        </a>
+        <a href="/terms-of-services" class="btn">
+            Terms of Services
+            <span>For unique, large-scale builds</span>
+        </a>
+    </div>
+</div>
+
 </body>
 </html>
